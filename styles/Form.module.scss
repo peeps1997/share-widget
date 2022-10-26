@@ -1,0 +1,7 @@
+.FormGroup {
+    padding-top: 8px;
+  }
+.FormControlLabel {
+    @extend .FormGroup;
+    float: right;
+}

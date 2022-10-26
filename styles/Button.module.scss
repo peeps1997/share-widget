@@ -1,0 +1,58 @@
+.Button {
+    color: grey;
+    text-transform: capitalize;
+    border: 0px;
+    width: fit-content;
+    align-self: center;
+  }
+  .Button:hover {
+    background-color: rgb(225,225,225);
+  }
+.ButtonCopy {
+    @extend .Button;
+    height: inherit;
+  }
+
+.LearnButton {
+  @extend .Button;
+    height:fit-content;
+    margin-left: 5px;
+    font-size: x-small;
+    padding: 4px;
+  }
+.LearnButton > span {
+  margin-left: 3px;
+  font-size: 16px;
+}
+
+.FooterBox {
+  width: -webkit-fill-available;
+}
+
+.PaddedFooterBox {
+  @extend .FooterBox;
+  padding-top: 8px
+}
+
+.InviteButton {
+  @extend .Button;
+  background: '#2483e2'; 
+  color: 'white'; 
+  width: '20%'
+}
+
+.MoreOptionsBox {
+  margin-right: 5px;
+  float: right;
+}
+.MoreOptionsButton {
+  @extend .LearnButton;
+  }
+.MoreOptionsButton > span{
+    margin-left: 0px;
+    margin-right: 3px;
+    font-size: 16px;
+    }
+    .MoreOptionsButton > span > svg {
+      font-size: 16px;
+      }

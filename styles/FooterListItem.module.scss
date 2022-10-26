@@ -1,0 +1,24 @@
+.Box {
+    width: -webkit-fill-available;
+}
+.flexBox {
+    @extend .Box;
+    display: flex;
+}
+.stylediv {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: inherit;
+}
+
+.typo {
+    display: inline;
+    padding-left:5px;
+}
+
+.div > div:first-child {
+    padding: 0px;
+    padding-left: 5px;
+    background: #f7f7f5;
+  }
